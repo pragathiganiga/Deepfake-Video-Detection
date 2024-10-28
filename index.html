@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        .upload-section {
+            margin-top: 20px;
+        }
+        .upload-section input[type="file"] {
+            margin-right: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Deepfake Detection
+    </header>
+    <div class="container">
+        <div class="upload-section">
+            <input type="file" id="fileInput">
+            <button onclick="uploadVideo()">Upload Video</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Deepfake Detection Project
+    </footer>
+
+    <script>
+        function uploadVideo() {
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput.files.length === 0) {
+                alert('Please choose a file to upload');
+            } else {
+                // Implement upload logic here
+                alert('Video uploaded successfully!');
+            }
+        }
+    </script>
+</body>
+</html>
